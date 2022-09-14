@@ -14,7 +14,7 @@ function displayBanner() {
     if (userState == bannerLoc) {
       console.log('State match')
       //$('.section-banner-geo').show()
-      $('.section-banner-geo').css('height', '54px')
+      $('.section-banner-geo').css('min-height', '54px')
       $('.section-banner-geo').css('opacity', '100%')
 
       $('.section-droppop').hide()
