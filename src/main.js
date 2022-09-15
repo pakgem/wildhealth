@@ -16,7 +16,7 @@ function displayBanner() {
       //$('.section-banner-geo').show()
       $('.section-banner-geo').css('height', 'auto')
       $('.section-banner-geo').css('opacity', '100%')
-      $('.section-droppop').remove()
+      $('.section-droppop, .section-banner').remove()
     }
   }
 }
