@@ -12,7 +12,7 @@ function displayBanner() {
     let bannerLocStr = document.getElementById('bannerLoc').innerText
     let locItems = splitString(bannerLocStr)
 
-    // if user's state matches the state list set in banner settings
+    // if user's state exists in the the state list set in banner settings
     if (locItems.includes(userState)) {
       $('.section-banner-geo').css('height', '3.5rem')
       $('.section-banner-geo').css('opacity', '100%')
