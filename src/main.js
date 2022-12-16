@@ -16,7 +16,21 @@ function displayBanner() {
     if (locItems.includes(userState)) {
       $('.section-banner-geo').css('height', '3.5rem')
       $('.section-banner-geo').css('opacity', '100%')
-      $('.section-droppop, .section-banner').remove()
+      $('.section-droppop, .section-banner').css('opacity', '0%')
+      $('.section-droppop, .section-banner').css('height', '0rem')
+      $('.banner_content').animate(
+        {
+          opacity: '100%',
+        },
+        200
+      )
+    } else {
+      $('.banner_content').animate(
+        {
+          opacity: '100%',
+        },
+        200
+      )
     }
   }
 }
